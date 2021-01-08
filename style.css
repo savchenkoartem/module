@@ -11,7 +11,8 @@
     header {
         min-height: 51.5vh;
         width: 100%;
-        background-color: gold;
+        display: flex;
+        flex-direction: column;
     }
     .our,.our2,.otzyv {
         font-family: "Open Sans";
@@ -25,28 +26,30 @@
     .our {
       width: 200px;
         padding-top: 45px;
-        margin: 0 auto;
+      align-self: center;
     }
 .otzyv {
-text-align: center;
-margin-top: 70px;
+margin-top: 60px;
+align-self: center;
 }
     .flexbox {
         display: flex;
-        margin:70px 25px 10px 30px;
+        margin:20px 25px 0 30px;
         justify-content: space-around;
+        align-items:baseline;
     }
     .our2 {
-    width: 280px;
-    margin-top: 30px;
+    flex: 1;
+    margin: 40px 20px 0px 30px;
     }
   .our2::before {
       content: "";
       display: block;
       width: 50px;
       height: 50px;
-      background-repeat: no-repeat;
-      
+      margin: 0 auto 40px auto;
+      position: relative;
+      right: 30px;   
   }  
 
   .our2.foto1::before{
