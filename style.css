@@ -9,35 +9,40 @@
     }
     
     header {
-        min-height: 51.5vh;
+        height: 51.5vh;
         width: 100%;
         background-color: gold;
+       position: relative;
     }
     .our,.our2,.otzyv {
         font-family: "Open Sans";
         color: #410E54;
-        font-size: 17px;
+        font-size: 1.5vmax;
         line-height: 23px;
     }
     .our,.otzyv {
         font-weight: 600;
     }
     .our {
-      width: 200px;
+      width: 100%;
         padding-top: 45px;
         margin: 0 auto;
+        text-align: center;
     }
 .otzyv {
+    width: 100%;
 text-align: center;
-margin-top: 70px;
+margin: 0 auto;
+position: absolute;
+bottom: 40px;
 }
     .flexbox {
         display: flex;
-        margin:70px 25px 10px 30px;
+        margin:24px 25px 10px 30px;
         justify-content: space-around;
     }
     .our2 {
-    width: 280px;
+    width: 20vw;
     margin-top: 30px;
     }
   .our2::before {
@@ -45,7 +50,7 @@ margin-top: 70px;
       display: block;
       width: 50px;
       height: 50px;
-      background-repeat: no-repeat;
+      
       
   }  
 
@@ -65,5 +70,9 @@ margin-top: 70px;
   .our2.foto4::before {
       background: url("img/service.png");
       background-size: cover;
+  }
+
+  main {
+      
   }
 
