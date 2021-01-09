@@ -19,7 +19,7 @@
     .our,.our2,.otzyv,.turist,.zayava {
         font-family: "Open Sans";
         color: #410E54;
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 23px;
     }
     .our,.otzyv,#otpavka,.zayava {
@@ -99,7 +99,7 @@ align-self: center;
     background-color:rgba(30, 6, 33, 0.4);
   }
   article::before,article::after {
-font-size: xxx-large;
+font-size: 3rem;
 width: 30px;
 height: 50px;
 text-align: center;
@@ -126,6 +126,9 @@ font-weight: 400;
       width: 25vw;
       height: 45vh;
       background-size: 100% 100%;
+  }
+  #forValidator {
+      display: none ;
   }
 
   #form {
