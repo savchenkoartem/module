@@ -11,18 +11,18 @@
     }
     
     header {
-        min-height: 50vh;
+        min-height: 45vh;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .our,.our2,.otzyv,.turist {
+    .our,.our2,.otzyv,.turist,.zayava {
         font-family: "Open Sans";
         color: #410E54;
         font-size: 1em;
         line-height: 23px;
     }
-    .our,.otzyv {
+    .our,.otzyv,#otpavka,.zayava {
         font-weight: 600;
     }
     .our {
@@ -31,7 +31,7 @@
       align-self: center;
     }
 .otzyv {
-margin-top: 60px;
+margin-top: 30px;
 align-self: center;
 }
     .flexbox {
@@ -75,33 +75,47 @@ align-self: center;
       width: 100%;
       height: 100vh;
       background: url(img/bg_main.jpg);
-      background-position:center;
       background-size:100% 100%;
       display: flex;
+      flex-wrap: wrap;
       align-items: flex-start;
   }
   article {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      margin-top: 10px;
   }
   .kvadrat {
       width:50vw; 
-      height: 25vh;
-      background-color:rgba(30, 6, 33, 0.4);
+      height: 26vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-  }
-  main::before {
-
-content: "dffgfgf";
-display: block;
-color: crimson;
   }
 
+  .kvadrat,article::before,article::after,#name,#phone{
+    background-color:rgba(30, 6, 33, 0.4);
+  }
+  article::before,article::after {
+font-size: xxx-large;
+width: 30px;
+height: 50px;
+text-align: center;
+line-height: 44px;
+vertical-align: middle;
+color: #ffff;
+font-weight: 400;
+  }
+  article::after {
+      content: "›";
+      margin-right: 30px;
+  }
+  article::before {
+    content: "‹";
+  }
+ 
   .turist {
       color:#ffff;
       padding: 10px 15px 10px 25px;
@@ -109,8 +123,52 @@ color: crimson;
 
   .photo {
       background: url(img/turisto.jpg);
-      width: 28vw;
-      height: 50vh;
+      width: 25vw;
+      height: 45vh;
       background-size: 100% 100%;
   }
+
+  #form {
+      width: 100%;
+      min-height: 50vh;
+      margin-top: 50px;
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     justify-content: flex-start;
+  }
+
+  #name,#phone,#otpavka {
+      width: 30vw;
+      height: 7vh;
+      color:#ffff;
+      text-align: center;
+      font-size: 1rem;
+      border: none;
+      margin-top: 20px; 
+  }
+  .zayava {
+      margin-bottom: 30px;
+  }
+
+  input::placeholder {
+      color: #ffff;
+  }
+  #otpavka {
+      color:#410E54;
+      cursor: pointer;
+      margin-top: 50px;
+  }
+  footer {
+      height: 12vh;
+      width: 100%;
+      background-color: rgba(30, 6, 33, 0.66);
+      opacity: .5;
+  }
+
+
+
+
+
+
 
