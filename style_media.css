@@ -1,0 +1,70 @@
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+main {
+    background: none;
+    background-color: skyblue;
+}
+    .flexbox {
+    flex-direction: column;
+}
+.our2::before {
+    display: none;
+}
+.our2,.otzyv,.our {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+article {
+    flex-direction: column;
+}
+.kvadrat {
+    width: 100%;
+    height: 70vh;
+}
+.turist {
+    font-size: 1.2em;
+}
+article::before,article::after {
+    display: none;
+}
+.photo {
+    width: 60%;
+}
+#name,#phone,#otpavka {
+    width: 100%;
+    height: 7vh;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+#form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.zayava {
+    font-size: 2rem;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 1500px) {
+header {
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.our,.our2,.otzyv,.turist,.zayava {
+    font-size: 1.3rem;
+}
+.photo {
+    width: 30vw;
+}
+    }
+
+}
+
+
+

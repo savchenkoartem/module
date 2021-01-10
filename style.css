@@ -26,9 +26,10 @@
         font-weight: 600;
     }
     .our {
-      width: 200px;
+      width: 50%;
         padding-top: 45px;
-      align-self: center;
+      margin: 0 auto;
+      text-align: center;
     }
 .otzyv {
 margin-top: 30px;
@@ -51,17 +52,18 @@ align-self: center;
       height: 50px;
       margin: 0 auto 40px auto;
       position: relative;
-      right: 30px;   
+      right: 30px; 
+       
   }  
 
   .our2.foto1::before{
       background: url("img/phone.png");
-      background-size: cover;
+      background-size: 100%
   }
 
   .our2.foto2::before{
       background: url("img/palma.png");
-      background-size: cover;
+      background-size: 100%;
   }
   .our2.foto3::before {
       background: url("img/hotel.png");
@@ -73,7 +75,7 @@ align-self: center;
   }
  main {
       width: 100%;
-      height: 100vh;
+      /* height: 100vh; */
       background: url(img/bg_main.jpg);
       background-size:100% 100%;
       display: flex;
@@ -123,7 +125,8 @@ font-weight: 400;
 
   .photo {
       background: url(img/turisto.jpg);
-      width: 25vw;
+      width: 24vw;
+      max-width: 500px;
       height: 45vh;
       background-size: 100% 100%;
   }
